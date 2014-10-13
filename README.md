@@ -28,31 +28,32 @@ Additional `make`-targets:
 
 ## Example
 
-    #include <api/ElsockController.h>
+```cpp
+#include <api/ElsockController.h>
 
-    /* ... */
+/* ... */
 
-    ElsockController ec("http", "127.0.0.1");  // Connect to elsock host
+ElsockController ec("http", "127.0.0.1");  // Connect to elsock host
     
-    ec.sendCommand(DEVICE_7, ON);   // Set device #7 to ON
-    ec.sendCommand(DEVICE_9, ON);   // Set device #9 to ON
+ec.sendCommand(DEVICE_7, ON);   // Set device #7 to ON
+ec.sendCommand(DEVICE_9, ON);   // Set device #9 to ON
     
-    ec.sendToggleAll(); // Toggle all devices
+ec.sendToggleAll(); // Toggle all devices
     
     
-    ElsockData response = ec.getStatus();   // Receive status
+ElsockData response = ec.getStatus();   // Receive status
     
-    Status statusDev4 = response[DEVICE_4]; // Get status of device #4
-    Status statusDev9 = response[DEVICE_9]; // Get status of device #9
+Status statusDev4 = response[DEVICE_4]; // Get status of device #4
+Status statusDev9 = response[DEVICE_9]; // Get status of device #9
     
-    // Print status of devices #4 and #9
-    std::cout << "Device #4: " << ( statusDev4 == ON ? "ON" : "not ON" )
-              << "\n"
-              << "Device #9: " << ( statusDev9 == ON ? "ON" : "not ON" )
-              << std::endl;
+// Print status of devices #4 and #9
+std::cout << "Device #4: " << ( statusDev4 == ON ? "ON" : "not ON" )
+          << "\n"
+          << "Device #9: " << ( statusDev9 == ON ? "ON" : "not ON" )
+          << std::endl;
     
-    ec.sendCommand(ALL, OFF);   // Turn off all devices
-
+ec.sendCommand(ALL, OFF);   // Turn off all devices
+```
 *Don't forget to link **Elsock** and **Qt 5 Network**!*
 
 
