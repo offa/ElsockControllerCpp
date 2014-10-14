@@ -4,6 +4,8 @@ A controller application / library for [Elsock](https://github.com/forflo/arduin
 
 It can be used as a stand-alone application or as a library for other projects.
 
+**Note:** There's also a ***Java*** version: [Elsock Controller Java](https://github.com/offa/ElsockControllerJava)
+
 ## Requirements
 
  * **Qt 5** - Network / Widget (if build as application)
