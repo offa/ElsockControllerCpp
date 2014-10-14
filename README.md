@@ -61,7 +61,7 @@ std::cout << "Device #4: " << ( statusDev4 == ON ? "ON" : "not ON" )
 // Turn off all devices
 ec.sendCommand(ALL, OFF);
 ```
-*Don't forget to link **Elsock** and **Qt 5 Network**!*
+*Don't forget to link **Elsock library** and **Qt 5 Network**!*
 
 
 ## License
