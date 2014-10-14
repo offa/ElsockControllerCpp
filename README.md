@@ -1,4 +1,4 @@
-# Elsock Controller
+# Elsock Controller *Cpp*
 
 A controller application / library for [Elsock](https://github.com/forflo/arduino_elsock)-devices.
 
