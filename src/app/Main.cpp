@@ -43,7 +43,7 @@ int main(int argc, char** argv)
     QApplication::setApplicationName("ElsockController");
     QApplication::setApplicationVersion(ELSOCK_VERSION);
     
-	QApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     MainWindow window(app.applicationName(), app.applicationVersion());
     window.show();
