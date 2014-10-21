@@ -68,7 +68,7 @@ ec.sendCommand(ALL, OFF);
 
 ## License
 
-**GPLv3:**
+**GNU General Public License (GPL)**
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
